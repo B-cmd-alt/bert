@@ -1,0 +1,10 @@
+# Core dependencies for WordPiece tokenizer
+# No additional dependencies needed - using only Python standard library
+
+# Long training pipeline dependencies
+psutil>=5.9.0  # For system monitoring
+
+# Optional dependencies for development
+# pytest>=7.0.0  # For running tests
+# black>=22.0.0  # For code formatting
+# mypy>=1.0.0    # For type checking

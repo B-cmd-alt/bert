@@ -1,0 +1,129 @@
+2025-08-04 11:28:09,194 - INFO - === Real-World Data BERT Tokenizer Training Started ===
+2025-08-04 11:28:09,194 - INFO - Target vocabulary size: 30,000
+2025-08-04 11:28:09,194 - INFO - Output directory: bert_models
+2025-08-04 11:28:09,194 - INFO - === Training Estimates ===
+2025-08-04 11:28:09,194 - INFO - vocab_size: 30000
+2025-08-04 11:28:09,194 - INFO - recommended_data_size_gb: 11.0
+2025-08-04 11:28:09,194 - INFO - estimated_training_hours: 4.0 hours
+2025-08-04 11:28:09,194 - INFO - peak_memory_gb: 5.5
+2025-08-04 11:28:09,194 - INFO - final_model_size_mb: 1500.0
+2025-08-04 11:28:09,210 - INFO - Step 1: Downloading real-world datasets...
+2025-08-04 11:28:09,210 - INFO - Downloading Wikipedia sample via Hugging Face datasets...
+2025-08-04 11:28:09,282 - ERROR - Failed to download Wikipedia: No module named 'datasets'
+2025-08-04 11:28:09,285 - INFO - Downloading Project Gutenberg books sample...
+2025-08-04 11:28:09,345 - ERROR - Failed to download books: No module named 'datasets'
+2025-08-04 11:28:09,345 - INFO - Downloading news sample...
+2025-08-04 11:28:09,425 - ERROR - Failed to download news: No module named 'datasets'
+2025-08-04 11:28:09,425 - INFO - Step 2: Combining datasets...
+2025-08-04 11:28:09,425 - INFO - Combining 3 datasets into bert_models\combined_training_data.txt
+2025-08-04 11:28:09,425 - INFO - Adding bert_models\raw_data\wiki_sample.txt...
+2025-08-04 11:28:09,441 - INFO -   Added 1 lines from bert_models\raw_data\wiki_sample.txt
+2025-08-04 11:28:09,441 - INFO - Adding bert_models\raw_data\books_sample.txt...
+2025-08-04 11:28:09,441 - INFO -   Added 1 lines from bert_models\raw_data\books_sample.txt
+2025-08-04 11:28:09,441 - INFO - Adding bert_models\raw_data\news_sample.txt...
+2025-08-04 11:28:09,441 - INFO -   Added 1 lines from bert_models\raw_data\news_sample.txt
+2025-08-04 11:28:09,441 - INFO - Combined dataset: 3 lines, 0.0 MB
+2025-08-04 11:28:09,441 - INFO - Step 3: Training BERT tokenizer...
+2025-08-04 11:28:09,441 - INFO - Training BERT tokenizer with vocab_size=30000
+2025-08-04 11:28:09,441 - INFO - Training estimates: {'vocab_size': 30000, 'recommended_data_size_gb': 11.0, 'estimated_training_hours': 4.0, 'peak_memory_gb': 5.5, 'final_model_size_mb': 1500.0}
+2025-08-04 11:28:09,441 - INFO - Starting WordPiece training...
+2025-08-04 11:28:09,457 - INFO - Training completed in 0:00:00
+2025-08-04 11:28:09,457 - INFO - === Training Results ===
+2025-08-04 11:28:09,457 - INFO - final_vocab_size: 72
+2025-08-04 11:28:09,457 - INFO - training_time_seconds: 0:00:00
+2025-08-04 11:28:09,457 - INFO - model_file: bert_models\bert_tokenizer_vocab30k.pkl
+2025-08-04 11:28:09,457 - INFO - vocab_file: bert_models\bert_vocab_30k.txt
+2025-08-04 11:28:09,457 - INFO - === BERT Tokenizer Training Completed Successfully! ===
+2025-08-04 11:28:09,457 - INFO - Model saved to: bert_models\bert_tokenizer_vocab30k.pkl
+2025-08-04 11:28:09,457 - INFO - Ready for BERT training!
+2025-08-04 11:28:09,457 - INFO - Cleaned up temporary training file
+2025-08-04 11:31:20,833 - INFO - === Real-World Data BERT Tokenizer Training Started ===
+2025-08-04 11:31:20,833 - INFO - Target vocabulary size: 30,000
+2025-08-04 11:31:20,833 - INFO - Output directory: bert_models
+2025-08-04 11:31:20,833 - INFO - === Training Estimates ===
+2025-08-04 11:31:20,833 - INFO - vocab_size: 30000
+2025-08-04 11:31:20,833 - INFO - recommended_data_size_gb: 11.0
+2025-08-04 11:31:20,833 - INFO - estimated_training_hours: 4.0 hours
+2025-08-04 11:31:20,833 - INFO - peak_memory_gb: 5.5
+2025-08-04 11:31:20,833 - INFO - final_model_size_mb: 1500.0
+2025-08-04 11:31:20,833 - INFO - Step 1: Downloading real-world datasets...
+2025-08-04 11:31:20,833 - INFO - Wikipedia sample already exists: bert_models\raw_data\wiki_sample.txt
+2025-08-04 11:31:20,833 - INFO - Books sample already exists: bert_models\raw_data\books_sample.txt
+2025-08-04 11:31:20,844 - INFO - News sample already exists: bert_models\raw_data\news_sample.txt
+2025-08-04 11:31:20,844 - INFO - Step 2: Combining datasets...
+2025-08-04 11:31:20,844 - INFO - Combining 3 datasets into bert_models\combined_training_data.txt
+2025-08-04 11:31:20,844 - INFO - Adding bert_models\raw_data\wiki_sample.txt...
+2025-08-04 11:31:20,844 - INFO -   Added 1 lines from bert_models\raw_data\wiki_sample.txt
+2025-08-04 11:31:20,844 - INFO - Adding bert_models\raw_data\books_sample.txt...
+2025-08-04 11:31:20,844 - INFO -   Added 1 lines from bert_models\raw_data\books_sample.txt
+2025-08-04 11:31:20,844 - INFO - Adding bert_models\raw_data\news_sample.txt...
+2025-08-04 11:31:20,848 - INFO -   Added 1 lines from bert_models\raw_data\news_sample.txt
+2025-08-04 11:31:20,849 - INFO - Combined dataset: 3 lines, 0.0 MB
+2025-08-04 11:31:20,849 - INFO - Step 3: Training BERT tokenizer...
+2025-08-04 11:31:20,849 - INFO - Training BERT tokenizer with vocab_size=30000
+2025-08-04 11:31:20,849 - INFO - Training estimates: {'vocab_size': 30000, 'recommended_data_size_gb': 11.0, 'estimated_training_hours': 4.0, 'peak_memory_gb': 5.5, 'final_model_size_mb': 1500.0}
+2025-08-04 11:31:20,849 - INFO - Starting WordPiece training...
+2025-08-04 11:31:20,850 - INFO - Training completed in 0:00:00
+2025-08-04 11:31:20,857 - INFO - === Training Results ===
+2025-08-04 11:31:20,857 - INFO - final_vocab_size: 72
+2025-08-04 11:31:20,857 - INFO - training_time_seconds: 0:00:00
+2025-08-04 11:31:20,857 - INFO - model_file: bert_models\bert_tokenizer_vocab30k.pkl
+2025-08-04 11:31:20,857 - INFO - vocab_file: bert_models\bert_vocab_30k.txt
+2025-08-04 11:31:20,857 - INFO - === BERT Tokenizer Training Completed Successfully! ===
+2025-08-04 11:31:20,857 - INFO - Model saved to: bert_models\bert_tokenizer_vocab30k.pkl
+2025-08-04 11:31:20,857 - INFO - Ready for BERT training!
+2025-08-04 11:31:20,857 - INFO - Cleaned up temporary training file
+2025-08-04 11:37:01,883 - INFO - === Real-World Data BERT Tokenizer Training Started ===
+2025-08-04 11:37:01,883 - INFO - Target vocabulary size: 15,000
+2025-08-04 11:37:01,883 - INFO - Output directory: bert_models
+2025-08-04 11:37:01,883 - INFO - === Training Estimates ===
+2025-08-04 11:37:01,883 - INFO - vocab_size: 15000
+2025-08-04 11:37:01,883 - INFO - recommended_data_size_gb: 9.5
+2025-08-04 11:37:01,883 - INFO - estimated_training_hours: 3.0 hours
+2025-08-04 11:37:01,883 - INFO - peak_memory_gb: 4.8
+2025-08-04 11:37:01,883 - INFO - final_model_size_mb: 750.0
+2025-08-04 11:37:01,883 - INFO - Step 1: Downloading real-world datasets...
+2025-08-04 11:37:01,883 - INFO - Downloading Wikipedia sample via Hugging Face datasets...
+2025-08-04 11:37:05,551 - INFO - Loading Wikipedia dataset...
+2025-08-04 11:37:05,551 - INFO - Trying wikipedia with config 20220301.en...
+2025-08-04 11:37:06,272 - WARNING - Failed to load wikipedia:20220301.en - Dataset scripts are no longer supported, but found wikipedia.py
+2025-08-04 11:37:06,272 - INFO - Trying wikipedia with config 20220301.simple...
+2025-08-04 11:37:06,430 - WARNING - Failed to load wikipedia:20220301.simple - Dataset scripts are no longer supported, but found wikipedia.py
+2025-08-04 11:37:06,430 - INFO - Trying legacy-datasets/wikipedia with config 20220301.en...
+2025-08-04 11:37:06,706 - WARNING - Failed to load legacy-datasets/wikipedia:20220301.en - Dataset scripts are no longer supported, but found wikipedia.py
+2025-08-04 11:37:06,706 - ERROR - Failed to download Wikipedia: Could not load any Wikipedia dataset configuration
+2025-08-04 11:37:06,706 - INFO - Attempting fallback: Creating sample Wikipedia-style text...
+2025-08-04 11:37:06,712 - INFO - Created fallback Wikipedia content: bert_models\raw_data\wiki_sample.txt
+2025-08-04 11:37:06,713 - INFO - Downloading Project Gutenberg books sample...
+2025-08-04 11:37:06,713 - INFO - Loading Project Gutenberg dataset...
+2025-08-04 11:37:13,903 - WARNING - Could not load Project Gutenberg dataset: Bad split: train. Available splits: ['de', 'en', 'es', 'fr', 'it', 'nl', 'pl', 'pt', 'ru', 'sv', 'zh']
+2025-08-04 11:37:13,903 - INFO - Creating substantial literary fallback content...
+2025-08-04 11:37:13,903 - INFO - Books sample created: bert_models\raw_data\books_sample.txt
+2025-08-04 11:37:13,903 - INFO - Downloading news sample...
+2025-08-04 11:37:13,903 - INFO - Loading BBC news dataset...
+2025-08-04 11:37:16,188 - INFO - Processing news articles...
+2025-08-04 11:37:16,254 - INFO - News sample created: bert_models\raw_data\news_sample.txt
+2025-08-04 11:37:16,254 - INFO - News sample created: bert_models\raw_data\news_sample.txt
+2025-08-04 11:37:16,254 - INFO - Step 2: Combining datasets...
+2025-08-04 11:37:16,254 - INFO - Combining 3 datasets into bert_models\combined_training_data.txt
+2025-08-04 11:37:16,254 - INFO - Adding bert_models\raw_data\wiki_sample.txt...
+2025-08-04 11:37:16,264 - INFO -   Added 10,000 lines from bert_models\raw_data\wiki_sample.txt
+2025-08-04 11:37:16,264 - INFO - Adding bert_models\raw_data\books_sample.txt...
+2025-08-04 11:37:16,271 - INFO -   Added 5,000 lines from bert_models\raw_data\books_sample.txt
+2025-08-04 11:37:16,271 - INFO - Adding bert_models\raw_data\news_sample.txt...
+2025-08-04 11:37:16,288 - INFO -   Added 1,225 lines from bert_models\raw_data\news_sample.txt
+2025-08-04 11:37:16,288 - INFO - Combined dataset: 16,225 lines, 4.2 MB
+2025-08-04 11:37:16,288 - INFO - Step 3: Training BERT tokenizer...
+2025-08-04 11:37:16,288 - INFO - Training BERT tokenizer with vocab_size=15000
+2025-08-04 11:37:16,288 - INFO - Training estimates: {'vocab_size': 15000, 'recommended_data_size_gb': 9.5, 'estimated_training_hours': 3.0, 'peak_memory_gb': 4.75, 'final_model_size_mb': 750.0}
+2025-08-04 11:37:16,288 - INFO - Starting WordPiece training...
+2025-08-04 11:49:22,034 - INFO - Training completed in 0:12:05
+2025-08-04 11:49:22,073 - INFO - === Training Results ===
+2025-08-04 11:49:22,073 - INFO - final_vocab_size: 15000
+2025-08-04 11:49:22,073 - INFO - training_time_seconds: 0:12:05
+2025-08-04 11:49:22,073 - INFO - model_file: bert_models\bert_tokenizer_vocab15k.pkl
+2025-08-04 11:49:22,073 - INFO - vocab_file: bert_models\bert_vocab_15k.txt
+2025-08-04 11:49:22,073 - INFO - === BERT Tokenizer Training Completed Successfully! ===
+2025-08-04 11:49:22,073 - INFO - Model saved to: bert_models\bert_tokenizer_vocab15k.pkl
+2025-08-04 11:49:22,073 - INFO - Ready for BERT training!
+2025-08-04 11:49:22,074 - INFO - Cleaned up temporary training file

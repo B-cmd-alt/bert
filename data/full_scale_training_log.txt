@@ -1,0 +1,206 @@
+2025-08-04 12:15:15,360 - INFO - === Full-Scale BERT Tokenizer Training Started ===
+2025-08-04 12:15:15,360 - INFO - Target vocabulary size: 50,000
+2025-08-04 12:15:15,360 - INFO - Output directory: large_bert_models
+2025-08-04 12:15:15,360 - INFO - Available RAM: 32GB
+2025-08-04 12:15:15,360 - INFO - Max training memory: 24GB
+2025-08-04 12:15:16,374 - INFO - === Initial System Resources ===
+2025-08-04 12:15:16,374 - INFO - Elapsed Time: 0:00:01
+2025-08-04 12:15:16,377 - INFO - Memory: 17.6GB used / 31.7GB total (55.6%)
+2025-08-04 12:15:16,377 - INFO - Available: 14.1GB
+2025-08-04 12:15:16,378 - INFO - CPU: 10.4%
+2025-08-04 12:15:16,378 - INFO - Step 1: Downloading complete real-world datasets...
+2025-08-04 12:15:16,378 - INFO - This may take 30-60 minutes for initial download...
+2025-08-04 12:15:16,378 - INFO - Downloading complete Wikipedia dataset...
+2025-08-04 12:15:21,284 - INFO - Trying Wikipedia strategy 1...
+2025-08-04 12:15:25,531 - INFO - Successfully loaded Wikipedia with strategy 1
+2025-08-04 12:15:25,531 - INFO - Processing Wikipedia articles (this will take time)...
+2025-08-04 12:15:34,189 - INFO - Processed 10,000 articles, 328,660 lines, 84.4 MB
+2025-08-04 12:15:36,710 - INFO - Processed 20,000 articles, 516,357 lines, 121.9 MB
+2025-08-04 12:15:39,173 - INFO - Processed 30,000 articles, 711,090 lines, 160.4 MB
+2025-08-04 12:15:41,669 - INFO - Processed 40,000 articles, 895,935 lines, 198.1 MB
+2025-08-04 12:15:44,168 - INFO - Processed 50,000 articles, 1,088,230 lines, 236.5 MB
+2025-08-04 12:15:46,565 - INFO - Processed 60,000 articles, 1,267,667 lines, 272.9 MB
+2025-08-04 12:15:48,884 - INFO - Processed 70,000 articles, 1,445,889 lines, 309.3 MB
+2025-08-04 12:15:51,248 - INFO - Processed 80,000 articles, 1,623,917 lines, 346.0 MB
+2025-08-04 12:15:53,575 - INFO - Processed 90,000 articles, 1,797,776 lines, 382.3 MB
+2025-08-04 12:15:56,069 - INFO - Processed 100,000 articles, 1,977,614 lines, 420.0 MB
+2025-08-04 12:15:58,407 - INFO - Processed 110,000 articles, 2,155,713 lines, 457.3 MB
+2025-08-04 12:16:00,507 - INFO - Processed 120,000 articles, 2,331,099 lines, 493.3 MB
+2025-08-04 12:16:02,328 - INFO - Processed 130,000 articles, 2,508,598 lines, 530.1 MB
+2025-08-04 12:16:04,186 - INFO - Processed 140,000 articles, 2,691,862 lines, 568.2 MB
+2025-08-04 12:16:06,154 - INFO - Processed 150,000 articles, 2,871,415 lines, 604.7 MB
+2025-08-04 12:16:11,593 - INFO - Processed 160,000 articles, 3,040,070 lines, 639.9 MB
+2025-08-04 12:16:13,938 - INFO - Processed 170,000 articles, 3,213,607 lines, 675.2 MB
+2025-08-04 12:16:16,334 - INFO - Processed 180,000 articles, 3,387,079 lines, 709.7 MB
+2025-08-04 12:16:18,825 - INFO - Processed 190,000 articles, 3,574,163 lines, 744.9 MB
+2025-08-04 12:16:21,469 - INFO - Processed 200,000 articles, 3,752,520 lines, 780.7 MB
+2025-08-04 12:16:23,833 - INFO - Processed 210,000 articles, 3,924,211 lines, 815.3 MB
+2025-08-04 12:16:26,309 - INFO - Processed 220,000 articles, 4,091,993 lines, 848.9 MB
+2025-08-04 12:16:28,939 - INFO - Processed 230,000 articles, 4,243,350 lines, 877.7 MB
+2025-08-04 12:16:31,878 - INFO - Processed 240,000 articles, 4,434,182 lines, 911.8 MB
+2025-08-04 12:16:33,548 - INFO - Processed 250,000 articles, 4,606,112 lines, 944.7 MB
+2025-08-04 12:16:34,949 - INFO - Processed 260,000 articles, 4,777,869 lines, 978.7 MB
+2025-08-04 12:16:36,464 - INFO - Processed 270,000 articles, 4,943,483 lines, 1011.7 MB
+2025-08-04 12:16:37,910 - INFO - Processed 280,000 articles, 5,106,269 lines, 1044.4 MB
+2025-08-04 12:16:39,101 - INFO - Processed 290,000 articles, 5,262,868 lines, 1076.5 MB
+2025-08-04 12:16:40,182 - INFO - Processed 300,000 articles, 5,428,743 lines, 1111.1 MB
+2025-08-04 12:16:41,154 - INFO - Processed 310,000 articles, 5,568,622 lines, 1139.3 MB
+2025-08-04 12:16:45,237 - INFO - Processed 320,000 articles, 5,721,660 lines, 1169.8 MB
+2025-08-04 12:16:54,563 - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 88e7c983-272b-439a-a9b9-8ac2a619c26c)')' thrown while requesting GET https://huggingface.co/datasets/wikimedia/wikipedia/resolve/b04c8d1ceb2f5cd4588862100d08de323dccfbaa/20231101.en/train-00002-of-00041.parquet
+2025-08-04 12:16:54,563 - WARNING - Retrying in 1s [Retry 1/5].
+2025-08-04 12:17:05,785 - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: a5f0b3fe-0fae-415f-b470-f462e909f577)')' thrown while requesting GET https://huggingface.co/datasets/wikimedia/wikipedia/resolve/b04c8d1ceb2f5cd4588862100d08de323dccfbaa/20231101.en/train-00002-of-00041.parquet
+2025-08-04 12:17:05,785 - WARNING - Retrying in 2s [Retry 2/5].
+2025-08-04 12:17:08,657 - INFO - Processed 330,000 articles, 5,861,256 lines, 1197.1 MB
+2025-08-04 12:17:10,462 - INFO - Processed 340,000 articles, 6,011,663 lines, 1226.3 MB
+2025-08-04 12:17:12,439 - INFO - Processed 350,000 articles, 6,160,178 lines, 1255.8 MB
+2025-08-04 12:17:13,630 - INFO - Processed 360,000 articles, 6,323,497 lines, 1289.5 MB
+2025-08-04 12:17:14,777 - INFO - Processed 370,000 articles, 6,486,087 lines, 1321.9 MB
+2025-08-04 12:17:16,000 - INFO - Processed 380,000 articles, 6,646,991 lines, 1353.2 MB
+2025-08-04 12:17:16,997 - INFO - Processed 390,000 articles, 6,811,408 lines, 1385.5 MB
+2025-08-04 12:17:17,972 - INFO - Processed 400,000 articles, 6,965,363 lines, 1415.9 MB
+2025-08-04 12:17:18,986 - INFO - Processed 410,000 articles, 7,120,205 lines, 1445.9 MB
+2025-08-04 12:17:20,018 - INFO - Processed 420,000 articles, 7,283,828 lines, 1478.4 MB
+2025-08-04 12:17:21,259 - INFO - Processed 430,000 articles, 7,444,245 lines, 1510.0 MB
+2025-08-04 12:17:22,373 - INFO - Processed 440,000 articles, 7,608,094 lines, 1540.7 MB
+2025-08-04 12:17:23,426 - INFO - Processed 450,000 articles, 7,764,172 lines, 1569.9 MB
+2025-08-04 12:17:24,460 - INFO - Processed 460,000 articles, 7,925,090 lines, 1602.3 MB
+2025-08-04 12:17:35,393 - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 288bddc9-54e2-4bea-adb4-a7245ad9e922)')' thrown while requesting GET https://huggingface.co/datasets/wikimedia/wikipedia/resolve/b04c8d1ceb2f5cd4588862100d08de323dccfbaa/20231101.en/train-00003-of-00041.parquet
+2025-08-04 12:17:35,393 - WARNING - Retrying in 1s [Retry 1/5].
+2025-08-04 12:17:46,485 - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: c1c84467-4109-4f28-bef2-bff651300810)')' thrown while requesting GET https://huggingface.co/datasets/wikimedia/wikipedia/resolve/b04c8d1ceb2f5cd4588862100d08de323dccfbaa/20231101.en/train-00003-of-00041.parquet
+2025-08-04 12:17:46,485 - WARNING - Retrying in 2s [Retry 2/5].
+2025-08-04 12:17:50,969 - INFO - Processed 470,000 articles, 8,086,294 lines, 1633.7 MB
+2025-08-04 12:18:06,532 - INFO - Processed 480,000 articles, 8,241,877 lines, 1664.8 MB
+2025-08-04 12:18:14,622 - INFO - Processed 490,000 articles, 8,400,604 lines, 1696.8 MB
+2025-08-04 12:18:26,217 - INFO - Processed 500,000 articles, 8,554,248 lines, 1727.9 MB
+2025-08-04 12:18:26,383 - INFO - Wikipedia dataset complete: 500,000 articles, 1727.9 MB
+2025-08-04 12:18:27,537 - INFO - === After Wikipedia System Resources ===
+2025-08-04 12:18:27,537 - INFO - Elapsed Time: 0:03:12
+2025-08-04 12:18:27,537 - INFO - Memory: 19.0GB used / 31.7GB total (60.1%)
+2025-08-04 12:18:27,537 - INFO - Available: 12.7GB
+2025-08-04 12:18:27,537 - INFO - CPU: 31.7%
+2025-08-04 12:18:27,552 - INFO - Downloading complete Project Gutenberg books...
+2025-08-04 12:18:27,568 - INFO - Loading Project Gutenberg books in en...
+2025-08-04 12:18:32,100 - WARNING - Failed to load en books: BuilderConfig 'en' not found. Available: ['default']
+2025-08-04 12:18:32,100 - INFO - Loading Project Gutenberg books in de...
+2025-08-04 12:18:35,885 - WARNING - Failed to load de books: BuilderConfig 'de' not found. Available: ['default']
+2025-08-04 12:18:35,885 - INFO - Loading Project Gutenberg books in fr...
+2025-08-04 12:18:39,465 - WARNING - Failed to load fr books: BuilderConfig 'fr' not found. Available: ['default']
+2025-08-04 12:18:39,467 - INFO - Loading Project Gutenberg books in es...
+2025-08-04 12:18:43,570 - WARNING - Failed to load es books: BuilderConfig 'es' not found. Available: ['default']
+2025-08-04 12:18:43,571 - INFO - Loading Project Gutenberg books in it...
+2025-08-04 12:18:52,246 - WARNING - Failed to load it books: BuilderConfig 'it' not found. Available: ['default']
+2025-08-04 12:18:52,248 - INFO - Books dataset complete: 0 books, 0.0 MB
+2025-08-04 12:18:53,271 - INFO - === After Books System Resources ===
+2025-08-04 12:18:53,272 - INFO - Elapsed Time: 0:03:37
+2025-08-04 12:18:53,272 - INFO - Memory: 19.0GB used / 31.7GB total (59.9%)
+2025-08-04 12:18:53,272 - INFO - Available: 12.7GB
+2025-08-04 12:18:53,272 - INFO - CPU: 29.0%
+2025-08-04 12:18:53,272 - INFO - Downloading complete news datasets...
+2025-08-04 12:18:53,277 - INFO - Loading SetFit/bbc-news...
+2025-08-04 12:18:55,210 - INFO - Processed 1000 articles from SetFit/bbc-news, 2.2 MB
+2025-08-04 12:18:55,252 - INFO - Loading SetFit/bbc-news...
+2025-08-04 12:18:57,394 - INFO - Processed 1000 articles from SetFit/bbc-news, 4.8 MB
+2025-08-04 12:18:57,394 - INFO - Loading Fraser/news-category-dataset...
+2025-08-04 12:18:57,467 - WARNING - Failed to load Fraser/news-category-dataset: Dataset 'Fraser/news-category-dataset' doesn't exist on the Hub or cannot be accessed.
+2025-08-04 12:18:57,467 - INFO - Loading cc_news...
+2025-08-04 12:19:22,614 - INFO - Processed 1000 articles from cc_news, 7.2 MB
+2025-08-04 12:19:22,748 - INFO - Processed 2000 articles from cc_news, 9.4 MB
+2025-08-04 12:19:22,899 - INFO - Processed 3000 articles from cc_news, 11.5 MB
+2025-08-04 12:19:23,130 - INFO - Processed 4000 articles from cc_news, 13.4 MB
+2025-08-04 12:19:23,267 - INFO - Processed 5000 articles from cc_news, 15.3 MB
+2025-08-04 12:19:23,452 - INFO - Processed 6000 articles from cc_news, 17.0 MB
+2025-08-04 12:19:23,557 - INFO - Processed 7000 articles from cc_news, 18.2 MB
+2025-08-04 12:19:23,713 - INFO - Processed 8000 articles from cc_news, 20.7 MB
+2025-08-04 12:19:23,899 - INFO - Processed 9000 articles from cc_news, 23.2 MB
+2025-08-04 12:19:24,036 - INFO - Processed 10000 articles from cc_news, 25.0 MB
+2025-08-04 12:19:24,043 - INFO - News dataset complete: 12,225 articles, 25.0 MB
+2025-08-04 12:19:25,180 - INFO - === After News System Resources ===
+2025-08-04 12:19:25,180 - INFO - Elapsed Time: 0:04:09
+2025-08-04 12:19:25,180 - INFO - Memory: 19.0GB used / 31.7GB total (60.1%)
+2025-08-04 12:19:25,180 - INFO - Available: 12.6GB
+2025-08-04 12:19:25,182 - INFO - CPU: 34.5%
+2025-08-04 12:19:25,182 - INFO - Step 2: Combining complete datasets...
+2025-08-04 12:19:25,182 - INFO - Combining 3 large datasets into large_bert_models\combined_full_training_data.txt
+2025-08-04 12:19:25,190 - INFO - Processing large_bert_models\full_data\wikipedia_full.txt (1727.9 MB)...
+2025-08-04 12:20:55,890 - INFO -   Added 8,554,248 lines from large_bert_models\full_data\wikipedia_full.txt
+2025-08-04 12:20:55,898 - INFO - Processing large_bert_models\full_data\books_full.txt (0.0 MB)...
+2025-08-04 12:20:55,899 - INFO -   Added 0 lines from large_bert_models\full_data\books_full.txt
+2025-08-04 12:20:55,910 - INFO - Processing large_bert_models\full_data\news_full.txt (25.0 MB)...
+2025-08-04 12:20:57,185 - INFO -   Added 204,906 lines from large_bert_models\full_data\news_full.txt
+2025-08-04 12:20:57,196 - INFO - Combined dataset: 8,759,154 lines, 1752.9 MB
+2025-08-04 12:20:58,261 - INFO - === After Combining System Resources ===
+2025-08-04 12:20:58,261 - INFO - Elapsed Time: 0:05:42
+2025-08-04 12:20:58,263 - INFO - Memory: 19.6GB used / 31.7GB total (61.8%)
+2025-08-04 12:20:58,263 - INFO - Available: 12.1GB
+2025-08-04 12:20:58,263 - INFO - CPU: 27.2%
+2025-08-04 12:20:58,263 - INFO - Step 3: Training large-scale BERT tokenizer...
+2025-08-04 12:20:58,265 - INFO - Training large BERT tokenizer with vocab_size=50,000
+2025-08-04 12:20:59,310 - INFO - === Pre-training System Resources ===
+2025-08-04 12:20:59,310 - INFO - Elapsed Time: 0:05:43
+2025-08-04 12:20:59,310 - INFO - Memory: 19.6GB used / 31.7GB total (61.8%)
+2025-08-04 12:20:59,312 - INFO - Available: 12.1GB
+2025-08-04 12:20:59,312 - INFO - CPU: 25.1%
+2025-08-04 12:20:59,312 - INFO - Starting large-scale WordPiece training...
+2025-08-04 12:20:59,312 - INFO - This may take 2-4 hours depending on data size...
+2025-08-04 12:57:15,261 - INFO - === Full-Scale BERT Tokenizer Training Started ===
+2025-08-04 12:57:15,261 - INFO - Target vocabulary size: 50,000
+2025-08-04 12:57:15,261 - INFO - Output directory: large_bert_models
+2025-08-04 12:57:15,261 - INFO - Available RAM: 32GB
+2025-08-04 12:57:15,262 - INFO - Max training memory: 24GB
+2025-08-04 12:57:16,267 - INFO - === Initial System Resources ===
+2025-08-04 12:57:16,267 - INFO - Elapsed Time: 0:00:01
+2025-08-04 12:57:16,267 - INFO - Memory: 29.2GB used / 31.7GB total (92.3%)
+2025-08-04 12:57:16,267 - INFO - Available: 2.4GB
+2025-08-04 12:57:16,267 - INFO - CPU: 11.4%
+2025-08-04 12:57:16,267 - WARNING - High memory usage - consider reducing batch size
+2025-08-04 12:57:16,268 - INFO - Step 1: Downloading complete real-world datasets...
+2025-08-04 12:57:16,268 - INFO - This may take 30-60 minutes for initial download...
+2025-08-04 12:57:16,270 - INFO - Wikipedia dataset exists: large_bert_models\full_data\wikipedia_full.txt (1727.9 MB)
+2025-08-04 12:57:17,275 - INFO - === After Wikipedia System Resources ===
+2025-08-04 12:57:17,275 - INFO - Elapsed Time: 0:00:02
+2025-08-04 12:57:17,275 - INFO - Memory: 29.2GB used / 31.7GB total (92.3%)
+2025-08-04 12:57:17,275 - INFO - Available: 2.5GB
+2025-08-04 12:57:17,275 - INFO - CPU: 13.1%
+2025-08-04 12:57:17,275 - WARNING - High memory usage - consider reducing batch size
+2025-08-04 12:57:17,277 - INFO - Downloading complete Project Gutenberg books...
+2025-08-04 12:57:17,277 - ERROR - Books download failed: No module named 'datasets'
+2025-08-04 12:57:17,278 - INFO - Creating comprehensive literary fallback content...
+2025-08-04 12:57:17,288 - INFO - Created books fallback: large_bert_models\full_data\books_full.txt (1.0 MB)
+2025-08-04 12:57:18,294 - INFO - === After Books System Resources ===
+2025-08-04 12:57:18,294 - INFO - Elapsed Time: 0:00:03
+2025-08-04 12:57:18,294 - INFO - Memory: 29.2GB used / 31.7GB total (92.3%)
+2025-08-04 12:57:18,294 - INFO - Available: 2.5GB
+2025-08-04 12:57:18,294 - INFO - CPU: 12.4%
+2025-08-04 12:57:18,294 - WARNING - High memory usage - consider reducing batch size
+2025-08-04 12:57:18,296 - INFO - News dataset exists: large_bert_models\full_data\news_full.txt (25.0 MB)
+2025-08-04 12:57:19,301 - INFO - === After News System Resources ===
+2025-08-04 12:57:19,301 - INFO - Elapsed Time: 0:00:04
+2025-08-04 12:57:19,301 - INFO - Memory: 29.3GB used / 31.7GB total (92.4%)
+2025-08-04 12:57:19,301 - INFO - Available: 2.4GB
+2025-08-04 12:57:19,301 - INFO - CPU: 20.0%
+2025-08-04 12:57:19,301 - WARNING - High memory usage - consider reducing batch size
+2025-08-04 12:57:19,303 - INFO - Step 2: Combining complete datasets...
+2025-08-04 12:57:19,303 - INFO - Combining 3 large datasets into large_bert_models\combined_full_training_data.txt
+2025-08-04 12:57:19,305 - INFO - Processing large_bert_models\full_data\wikipedia_full.txt (1727.9 MB)...
+2025-08-04 12:57:32,555 - INFO -   Added 8,554,248 lines from large_bert_models\full_data\wikipedia_full.txt
+2025-08-04 12:57:32,560 - INFO - Processing large_bert_models\full_data\books_full.txt (1.0 MB)...
+2025-08-04 12:57:32,569 - INFO -   Added 7,500 lines from large_bert_models\full_data\books_full.txt
+2025-08-04 12:57:32,574 - INFO - Processing large_bert_models\full_data\news_full.txt (25.0 MB)...
+2025-08-04 12:57:32,790 - INFO -   Added 204,906 lines from large_bert_models\full_data\news_full.txt
+2025-08-04 12:57:32,795 - INFO - Combined dataset: 8,766,654 lines, 1753.9 MB
+2025-08-04 12:57:33,800 - INFO - === After Combining System Resources ===
+2025-08-04 12:57:33,800 - INFO - Elapsed Time: 0:00:18
+2025-08-04 12:57:33,800 - INFO - Memory: 29.6GB used / 31.7GB total (93.5%)
+2025-08-04 12:57:33,800 - INFO - Available: 2.0GB
+2025-08-04 12:57:33,800 - INFO - CPU: 22.2%
+2025-08-04 12:57:33,800 - WARNING - High memory usage - consider reducing batch size
+2025-08-04 12:57:33,802 - INFO - Step 3: Training large-scale BERT tokenizer...
+2025-08-04 12:57:33,802 - INFO - Training large BERT tokenizer with vocab_size=50,000
+2025-08-04 12:57:34,810 - INFO - === Pre-training System Resources ===
+2025-08-04 12:57:34,810 - INFO - Elapsed Time: 0:00:19
+2025-08-04 12:57:34,810 - INFO - Memory: 29.6GB used / 31.7GB total (93.5%)
+2025-08-04 12:57:34,810 - INFO - Available: 2.1GB
+2025-08-04 12:57:34,810 - INFO - CPU: 30.7%
+2025-08-04 12:57:34,810 - WARNING - High memory usage - consider reducing batch size
+2025-08-04 12:57:34,811 - INFO - Starting large-scale WordPiece training...
+2025-08-04 12:57:34,812 - INFO - This may take 2-4 hours depending on data size...

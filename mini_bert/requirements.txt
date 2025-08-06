@@ -1,0 +1,12 @@
+# Mini-BERT Pure NumPy Implementation Requirements
+# Core dependencies as specified
+
+numpy>=1.21.0
+tqdm>=4.62.0
+
+# Evaluation dependencies
+datasets>=4.0.0
+scikit-learn>=1.7.0
+
+# Optional: for memory monitoring and system info
+psutil>=5.8.0

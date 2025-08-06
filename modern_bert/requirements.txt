@@ -1,0 +1,37 @@
+# Modern BERT Implementation Requirements
+# Using production-ready libraries
+
+# Core deep learning
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+tokenizers>=0.14.0
+
+# Training utilities
+wandb>=0.15.0
+tensorboard>=2.14.0
+tqdm>=4.65.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Evaluation metrics
+evaluate>=0.4.0
+seqeval>=1.2.2
+rouge-score>=0.1.2
+
+# Model optimization
+peft>=0.6.0  # Parameter-Efficient Fine-Tuning
+bitsandbytes>=0.41.0  # 8-bit optimization
+
+# Utilities
+python-dotenv>=1.0.0
+omegaconf>=2.3.0
+hydra-core>=1.3.0
+
+# Optional: For ONNX export
+onnx>=1.14.0
+onnxruntime>=1.16.0

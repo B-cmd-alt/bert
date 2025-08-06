@@ -4,3 +4,4 @@ data/large_bert_models/combined_full_training_data.txt filter=lfs diff=lfs merge
 data/large_bert_models/full_data/wikipedia_full.txt filter=lfs diff=lfs merge=lfs -text
 data/large_bert_models/full_data/*.txt filter=lfs diff=lfs merge=lfs -text
 *.safetensors filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
